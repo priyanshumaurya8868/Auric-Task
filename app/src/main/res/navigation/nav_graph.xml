@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.priyanshumaurya8868.aurictask.ui.UserFragment"
+        android:label="UserFragment" >
+        <action
+            android:id="@+id/action_userFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.priyanshumaurya8868.aurictask.ui.TransactionFragment"
+        android:label="TransactionFragment" />
+</navigation>
